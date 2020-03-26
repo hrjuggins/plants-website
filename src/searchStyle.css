@@ -1,0 +1,83 @@
+#search-container {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+#search-container img {
+  height: 10px;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  font-family: "Nunito";
+  text-align: left;
+}
+.input-button {
+  height: 30px;
+  width: 70px;
+}
+
+#open-search {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background-color: #29561af2;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#open-search img {
+  height: 40px;
+}
+
+.input-open {
+  font-size: 3em;
+  color: white;
+
+  width: calc(90% - 40px);
+  margin-left: 10px;
+}
+.input-open::placeholder {
+  color: white;
+}
+
+#search-area {
+  position: absolute;
+  top: 10vh;
+  width: 50vw;
+}
+
+#matches {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 30vh;
+}
+
+.search-result {
+  border: none;
+  height: 100px;
+  width: 30%;
+  color: white;
+  margin: 10px;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#exit-open-search {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 1em;
+}

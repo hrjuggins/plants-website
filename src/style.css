@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Playfair-Display";
+  src: local("PlayfairDisplay-Regular"),
+    url(./fonts/PlayfairDisplay-Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: local("NunitoSans-Regular"),
+    url(./fonts/NunitoSans-Regular.ttf) format("ttf");
+}
+
+body {
+  margin: 0;
+  background-image: url("./assets/lightpaperfibers_@2X.png");
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+}
+
+*:focus {
+  outline: none;
+}
+h3 {
+  color: #5e5f5c;
+  font-weight: 400;
+  margin: 15px 0;
+}
+h3:first-of-type {
+  margin-bottom: 0;
+  font-weight: 100;
+  font-family: "Open Sans Condensed";
+  font-size: 1em;
+}
+p {
+  color: #5e5f5c;
+}
+
+#root {
+  background-color: #f0eeed6e;
+  align-items: center;
+  width: 100vw;
+  margin: 0;
+}
+
+#navbar {
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#title {
+  font-size: 1em;
+  font-family: "Nunito";
+}
+
+#title span {
+  font-family: "Mr Dafoe";
+  font-style: italic;
+  margin: 0 10px 0 10px;
+}
+
+.plant-main {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 60px);
+}
+
+#social-links {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-links img {
+  height: 20px;
+  margin-top: 15px;
+}
+
+#social-links hr {
+  height: 20px;
+}
+#share {
+  transform: rotate(-90deg);
+  color: #5e5f5c;
+  font-family: "Open Sans Condensed";
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+#nav-buttons {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: none;
+  border: 0.5px solid lightgrey;
+  margin-bottom: 15px;
+}
+
+.nav-button:hover {
+  background-color: #69955b;
+}
+
+.nav-button img {
+  width: 20px;
+}
+.nav-button:nth-of-type(1) img {
+  transform: rotate(-90deg);
+}
+.nav-button:nth-of-type(2) img {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 450px) {
+  #nav-buttons {
+    display: none;
+  }
+  #social-links {
+    display: none;
+  }
+}
