@@ -14,14 +14,11 @@ const InfoButton = props => {
       setModal(true);
       setModalHeight(modalElement.current.clientHeight);
     } else {
-      console.log("there");
-
       setModal(false);
       setModalHeight(0);
     }
   };
   const { value, img, plantData } = props;
-  console.log(props);
 
   return (
     <div

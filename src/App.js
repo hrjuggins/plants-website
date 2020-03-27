@@ -51,7 +51,6 @@ const Application = () => {
       handleClick("prev");
     }
   };
-  console.log(id);
 
   // const config = useSwipeable({
   //   onSwipedLeft: () => handleClick("next"),
